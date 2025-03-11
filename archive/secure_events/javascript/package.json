@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "esbuild": "^0.25.0"
+  },
+  "devDependencies": {
+    "@citizenfx/client": "2.0.12817-1",
+    "@citizenfx/server": "2.0.12817-1",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3"
+  }
+}
