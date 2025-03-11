@@ -25,7 +25,7 @@ _The NUI developer tools are commonly used by cheaters to post malicious events 
 
 ### Lua Execution
 
-- `Localstate, exports, ox's lib.*` are all vulnerable to specific cheats that hijack the lua vm of the resource's they're used in. However when a resource is hijacked the code is placed on line 0, so you can simply check what line the function is being called from using `debug.getinfo()` and prevent this, see below;
+- `Localstate, exports, ox's lib.*` are all vulnerable to specific cheats that hijack the lua vm of the resource's they're used in. However when a resource is hijacked the code is placed on line -1, so you can simply check what line the function is being called from using `debug.getinfo()` and prevent this, see below;
 
 ```lua
 local debugInfo = debug.getinfo(2)
