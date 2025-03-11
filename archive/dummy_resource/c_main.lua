@@ -34,37 +34,3 @@ setmetatable(Proxy, {
     end
   end
 })
-
-
-
-
-
-
-
-
-
-
-print("hello?")
-
-RegisterCommand("a", function(_, _, _)
-  print(Proxy.first)
-end)
-
-RegisterCommand("b", function(_, a, _)
-  if not a[1] then
-    print("Please provide an arguement for the first name!")
-    return
-  end
-
-  updateCharacter("first", a[1])
-end)
-
-/*
-MachoInjectResource('dummy_resource', [[
-  Proxy.first = "Jacob"
-]])
-
-MachoInjectResource('dummy_resource', [[
-  updateCharacter("first", "Jacob")
-]])
-*/
